@@ -1,6 +1,6 @@
 const { app, dialog } = require('electron');
 
-const VERSION = '0.1'
+const VERSION = '0.1.0'
 
 const windowConfig = {
   width: 800,
