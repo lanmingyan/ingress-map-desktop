@@ -1,6 +1,6 @@
 {
   "name": "ingress-map-desktop",
-  "description": "An Electron app for Ingress Intel Map.",
+  "version": "0.1.0",
   "main": "src/main.js",
   "scripts": {
     "start": "electron .",
