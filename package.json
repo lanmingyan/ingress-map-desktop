@@ -26,6 +26,11 @@
         "zip"
       ]
     },
+    "linux": {
+      "target": [
+        "tar.gz"
+      ]
+    },
     "nsis": {
       "oneClick": false,
       "allowToChangeInstallationDirectory": true
