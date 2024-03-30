@@ -22,12 +22,6 @@ jobs:
         
       - name: Build Application
         run: npm run dist
-        
-      - name: Upload Artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: release-files
-          path: dist/*
           
   release:
     needs: build
