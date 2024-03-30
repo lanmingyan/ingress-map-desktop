@@ -1,6 +1,7 @@
 {
   "name": "ingress-map-desktop",
   "version": "0.1.0",
+  "description": "An Electron app for Ingress Intel Map",
   "main": "src/main.js",
   "scripts": {
     "start": "electron .",
@@ -34,7 +35,6 @@
     },
     "linux": {
       "target": [
-        "deb",
         "rpm",
         "tar.gz"
       ]
