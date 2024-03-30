@@ -28,13 +28,11 @@
     },
     "mac": {
       "target": [
-        "dmg",
         "zip"
       ]
     },
     "linux": {
       "target": [
-        "rpm",
         "tar.gz"
       ]
     },
