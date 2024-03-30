@@ -44,9 +44,6 @@ jobs:
         with:
           name: release-files
 
-      - name: Display structure of downloaded files
-        run: ls -R
-
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2.0.4
         with:
@@ -54,5 +51,3 @@ jobs:
             *.exe
             *.zip
           token: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
-        env:
-          GITHUB_REPOSITORY: lanmingyan/ingress-map-desktop

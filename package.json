@@ -6,7 +6,7 @@
   "scripts": {
     "start": "electron .",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder -w -p=never"
+    "dist": "electron-builder -w -l -m -p=never"
   },
   "license": "MIT",
   "build": {
@@ -23,7 +23,15 @@
     "win": {
       "target": [
         "nsis",
+        "portable",
         "zip"
+      ]
+    },
+    "linux": {
+      "target": [
+        "deb",
+        "rpm",
+        "tar.gz"
       ]
     },
     "nsis": {
