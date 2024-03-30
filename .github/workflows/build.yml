@@ -35,3 +35,15 @@ jobs:
         with:
           name: release-files
           path: dist/*
+
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download Artifacts
+        uses: actions/download-artifact@v4.1.4
+        with:
+          name: release-files
+
+      - name: Display structure of downloaded files
+          run: ls -R
