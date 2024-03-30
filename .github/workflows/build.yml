@@ -53,3 +53,6 @@ jobs:
           files: |
             *.exe
             *.zip
+          token: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
+        env:
+          GITHUB_REPOSITORY: lanmingyan/ingress-map-desktop
